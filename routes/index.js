@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* Agency Router */
-router.get('/api/agency', agencyController.list);
+router.get('/api/agency', agencyController.listAll);
 router.get('/api/agency/:id', agencyController.getById);
 router.post('/api/agency', agencyController.add);
 router.put('/api/agency/:id', agencyController.update);
